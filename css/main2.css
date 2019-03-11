@@ -11,14 +11,13 @@ html {
 }
 
 body {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .0)), url("https://images.unsplash.com/photo-1551266519-b6713933ebd6?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=louis-hansel-1399003-unsplash.jpg") center no-repeat;
-	background-size: cover;
+    background-color: #ffffff;
 
 }
 
 a {
 	text-decoration: none;
-	color: #eee;
+	color: #000000;
 }
 
 .container {
@@ -125,19 +124,95 @@ nav ul li a:hover::after {
 	transform: scaleX(1);
 }
 
+
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  width: 100%;
+  height: 50vh;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=ella-olsson-1128013-unsplash.jpg");
+}
+.slide2 {
+  background-image: url("https://images.unsplash.com/photo-1550335430-182e6165c01c?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=jwlez-1372472-unsplash.jpg");
+}
+.slide3 {
+  background-image: url("https://images.unsplash.com/photo-1551266519-b6713933ebd6?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=louis-hansel-1399003-unsplash.jpg");
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 5rem;
+  color: #000000;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
+
+}
+
+
+
+
+
+
 #first-article {
    
     /*Flexbox Container*/
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 10px
+    padding-top: 100px
 }
 
 
 
-article {
+#first-article article  {
   font-family: Arial;
+  font-size: 15px;
   background-color: #ffffff;
   border-radius: 30px;
   box-shadow: 5px 10px 8px #86be47;
@@ -181,8 +256,9 @@ article {
 
 
 
-article {
+#second-article article {
   font-family: Arial;
+  font-size: 15px;
   background-color: #ffffff;
   border-radius: 30px;
   box-shadow: 5px 10px 8px #86be47;
@@ -219,14 +295,15 @@ article {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 100px
+    padding-top: 130px
 
 }
 
 
 
-article {
+#third-article article {
   font-family: Arial;
+  font-size: 15px;
   background-color: #ffffff;
   border-radius: 30px;
   box-shadow: 5px 10px 8px #86be47;
