@@ -335,15 +335,17 @@ nav ul li a:hover::after {
 #info {
 	font-family: Arial;
 	font-size: 15px;
+	font-weight: bold;
 	padding: 50px;
 	text-align: center;
 	margin: 30px;
 
 }
 
-
-
-
+#info p {
+	padding-bottom: 30px;
+	color: #cc0000;
+}
 
 form label {
 	padding-top: 25px;
@@ -371,6 +373,8 @@ form label {
 }
 
 #contact-form input {
+	font-family: Arial;
+	font-size: 15px;
 	width: 600px;
 	height: 30px;
 	display: flex;
@@ -378,7 +382,6 @@ form label {
 	align-items: center;
 
 }
-
 
 #message-form label {
 	font-family: Arial;
@@ -391,35 +394,44 @@ form label {
 }
 
 #message-form input {
-	width: 600px;
-	height: 200px;
-
+	font-family: Arial;
+	font-size: 15px;
+	padding-bottom: 200px;
+	color: #000000;
 }
 
-#send-btn {
+input { 
+	display: flex;
+	justify-content: space-around;
+	font-family: Arial;
+	font-size: 15px;
+}
+
+#submit-button {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	padding-top: 30px;
 }
 
-#send-btn button {
+#submit-button input {
 	width: 150px;
 	height: 30px;
 	font-family: Arial;
 	font-size: 15px;
 	border-radius: 60px;
-	color: #000000;
-	background-color: #86be47;
-	font-weight: bold;
-}
-
-
-#send-btn button:hover {
 	color: #ffffff;
 	background-color: #000000;
 	font-weight: bold;
 }
+
+
+#submit-button input:hover {
+	color: #ffffff;
+	background-color: #cc0000;
+	font-weight: bold;
+}
+
 
 
 footer {
