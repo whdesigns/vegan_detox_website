@@ -433,6 +433,151 @@ input {
 }
 
 
+.recipe-row-one {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+  font-family: Arial;
+  padding-top: 50px;
+
+}
+
+.recipe-row-one h3 {
+    padding-bottom: 20px;
+}
+
+.recipe-row-one #art-1, #art-2, #art-3  {
+    text-align: center;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+
+.recipe-row-one article {
+    box-shadow: 5px 10px 8px #86be47;
+    margin-left: 20px;
+    padding-bottom: 20px
+}
+
+
+.recipe-row-one button {
+    width: 150px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 15px;
+    border-radius: 60px;
+    color: #000000;
+    font-weight: bold;
+    background-color: #86be47;
+
+}
+
+
+.recipe-row-one button:hover {
+    color: #ffffff;
+    background-color: #000000;
+    font-weight: bold;
+}
+
+
+.recipe-row-two {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+  font-family: Arial;
+  padding-top: 50px;
+
+}
+
+.recipe-row-two h3 {
+    padding-bottom: 20px;
+}
+
+.recipe-row-two #art-4, #art-5, #art-6  {
+    text-align: center;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+
+.recipe-row-two article {
+    box-shadow: 5px 10px 8px #86be47;
+    margin-left: 20px;
+    padding-bottom: 20px
+}
+
+
+.recipe-row-two button {
+    width: 150px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 15px;
+    border-radius: 60px;
+    color: #000000;
+    font-weight: bold;
+    background-color: #86be47;
+
+}
+
+
+.recipe-row-two button:hover {
+    color: #ffffff;
+    background-color: #000000;
+    font-weight: bold;
+}
+
+
+
+.recipe-row-three {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+  font-family: Arial;
+  padding-top: 50px;
+
+}
+
+.recipe-row-three h3 {
+    padding-bottom: 20px;
+}
+
+.recipe-row-three #art-7, #art-8, #art-9  {
+    text-align: center;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+
+.recipe-row-three article {
+    box-shadow: 5px 10px 8px #86be47;
+    margin-left: 20px;
+    padding-bottom: 20px
+}
+
+
+.recipe-row-three button {
+    width: 150px;
+    height: 30px;
+    font-family: Arial;
+    font-size: 15px;
+    border-radius: 60px;
+    color: #000000;
+    font-weight: bold;
+    background-color: #86be47;
+
+}
+
+
+.recipe-row-three button:hover {
+    color: #ffffff;
+    background-color: #000000;
+    font-weight: bold;
+}
+
+
 
 footer {
 	padding-top: 30px;
@@ -452,6 +597,8 @@ footer img {
 	padding: 10px;
 
 }
+
+
 
 @keyframes slideIn {
 	from {}
