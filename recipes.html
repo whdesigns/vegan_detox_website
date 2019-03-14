@@ -63,34 +63,29 @@
   arrowLeft = document.querySelector("#arrow-left"),
   arrowRight = document.querySelector("#arrow-right"),
   current = 0;
-
 // Clear all images
 function reset() {
   for (let i = 0; i < sliderImages.length; i++) {
     sliderImages[i].style.display = "none";
   }
 }
-
 // Init slider
 function startSlide() {
   reset();
   sliderImages[0].style.display = "block";
 }
-
 // Show prev
 function slideLeft() {
   reset();
   sliderImages[current - 1].style.display = "block";
   current--;
 }
-
 // Show next
 function slideRight() {
   reset();
   sliderImages[current + 1].style.display = "block";
   current++;
 }
-
 // Left arrow click
 arrowLeft.addEventListener("click", function() {
   if (current === 0) {
@@ -98,7 +93,6 @@ arrowLeft.addEventListener("click", function() {
   }
   slideLeft();
 });
-
 // Right arrow click
 arrowRight.addEventListener("click", function() {
   if (current === sliderImages.length - 1) {
@@ -106,9 +100,7 @@ arrowRight.addEventListener("click", function() {
   }
   slideRight();
 });
-
 startSlide();
-
 </script>
 
         <div class="recipe-row-one">
@@ -117,13 +109,13 @@ startSlide();
            
       
            <article>
-                <img src="imgs/.png"></img>  
+                <img src="imgs/recipe1.png"></img>  
         <h3>Recipe One</h3>
-      
+        <p><img src="imgs/stars1.png"></img></p>
 
         
        <p>A delicious vegan recipe that's guaranteed to leave your palette satisfied.</p>
-        <p><img src="imgs/stars1.png"></img></p>
+      
        
           <button>Read More</button>
          </article>
@@ -135,13 +127,13 @@ startSlide();
             
        
             <article>
-                <img src="imgs/.png"></img>  
+                <img src="imgs/recipe2.png"></img>  
         <h3>Recipe Two</h3>
-      
+         <p><img src="imgs/stars1.png"></img></p>
 
         
        <p>A delicious vegan recipe that's guaranteed to leave your palette satisfied.</p>
-             <p><img src="imgs/stars1.png"></img></p>
+        
         <button>Read More</button>
          </article>
       
@@ -152,13 +144,12 @@ startSlide();
             
        
             <article>
-                <img src="imgs/.png"></img>  
+                <img src="imgs/recipe3.png"></img>  
         <h3>Recipe Two</h3>
       
-
+   <p><img src="imgs/stars1.png"></img></p>
         
        <p>A delicious vegan recipe that's guaranteed to leave your palette satisfied.</p>
-             <p><img src="imgs/stars1.png"></img></p>
         <button>Read More</button>
          </article>
       
@@ -178,13 +169,13 @@ startSlide();
            
       
            <article>
-                <img src="imgs/.png"></img>  
+                <img src="imgs/recipe4.png"></img>  
         <h3>Recipe Four</h3>
-      
+         <p><img src="imgs/stars1.png"></img></p>
 
         
        <p>A delicious vegan recipe that's guaranteed to leave your palette satisfied.</p>
-        <p><img src="imgs/stars1.png"></img></p>
+     
        
           <button>Read More</button>
          </article>
@@ -196,13 +187,13 @@ startSlide();
             
        
             <article>
-                <img src="imgs/.png"></img>  
+                <img src="imgs/recipe5.png"></img>  
         <h3>Recipe Five</h3>
-      
+         <p><img src="imgs/stars1.png"></img></p>
 
         
        <p>A delicious vegan recipe that's guaranteed to leave your palette satisfied.</p>
-             <p><img src="imgs/stars1.png"></img></p>
+          
         <button>Read More</button>
          </article>
       
@@ -213,13 +204,13 @@ startSlide();
             
        
             <article>
-                <img src="imgs/.png"></img>  
+                <img src="imgs/recipe6.png"></img>  
         <h3>Recipe Six</h3>
-      
+            <p><img src="imgs/stars1.png"></img></p>
 
         
        <p>A delicious vegan recipe that's guaranteed to leave your palette satisfied.</p>
-             <p><img src="imgs/stars1.png"></img></p>
+         
         <button>Read More</button>
          </article>
       
@@ -238,13 +229,13 @@ startSlide();
            
       
            <article>
-                <img src="imgs/.png"></img>  
+                <img src="imgs/recipe7.png"></img>  
         <h3>Recipe Seven</h3>
       
-
+      <p><img src="imgs/stars1.png"></img></p>
         
        <p>A delicious vegan recipe that's guaranteed to leave your palette satisfied.</p>
-        <p><img src="imgs/stars1.png"></img></p>
+    
        
           <button>Read More</button>
          </article>
@@ -256,13 +247,13 @@ startSlide();
             
        
             <article>
-                <img src="imgs/.png"></img>  
+                <img src="imgs/recipe8.png"></img>  
         <h3>Recipe Eight</h3>
       
-
+      <p><img src="imgs/stars1.png"></img></p>
         
        <p>A delicious vegan recipe that's guaranteed to leave your palette satisfied.</p>
-             <p><img src="imgs/stars1.png"></img></p>
+   
         <button>Read More</button>
          </article>
       
@@ -273,13 +264,13 @@ startSlide();
             
        
             <article>
-                <img src="imgs/.png"></img>  
+                <img src="imgs/recipe9.png"></img>  
         <h3>Recipe Nine</h3>
       
-
+      <p><img src="imgs/stars1.png"></img></p>
         
        <p>A delicious vegan recipe that's guaranteed to leave your palette satisfied.</p>
-             <p><img src="imgs/stars1.png"></img></p>
+       
         <button>Read More</button>
          </article>
       
