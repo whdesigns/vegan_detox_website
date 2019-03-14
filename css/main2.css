@@ -4,28 +4,36 @@
 	box-sizing: border-box;
 }
 
+
+
+/*---------- MAIN DOCUMENT (PART 1)------------ */
 html {
 	font-size: 10px;
 	font-family: Arial;
 
 }
 
+/*---------- MAIN DOCUMENT (PART 2)------------ */
 body {
 	background-color: #ffffff;
 
 }
 
+
+/*---------- ALL ANCHOR TAGS------------ */
 a {
 	text-decoration: none;
 	color: #000000;
 }
 
+/*---------- HEADER SIZING------------ */
 .container {
 	max-width: 120rem;
 	width: 90%;
 	margin: 0 auto;
 }
 
+/*---------- MOBILE MENU------------ */
 .menu-toggle {
 	position: fixed;
 	top: 2.5rem;
@@ -37,6 +45,7 @@ a {
 	display: none;
 }
 
+/*---------- NAVBAR------------ */
 nav {
 	padding-top: 5rem;
 	display: flex;
@@ -47,16 +56,19 @@ nav {
 }
 
 
+/*---------- NAVBAR | UNORDERED LIST------------ */
 nav ul {
 	display: flex;
 }
 
+/*---------- NAVBAR | UNORDERED LIST | LISTED ITEMS------------ */
 nav ul li {
 	list-style: none;
 	transform: translateX(100rem);
 	animation: slideIn .5s forwards;
 }
 
+/*---------- ANIMATION FOR DESKTOP NAVBAR------------ */
 nav ul li:nth-child(1) {
 	animation-delay: 0s;
 }
@@ -73,6 +85,7 @@ nav ul li:nth-child(4) {
 	animation-delay: 1.5s;
 }
 
+/*---------- NAVBAR | UNORDERED LIST | LISTED ITEMS | ANCHOR TAGS FOR ANIMATION------------ */
 nav ul li a {
 	padding: 1rem 0;
 	margin: 0 3rem;
@@ -80,10 +93,14 @@ nav ul li a {
 	letter-spacing: 2px;
 }
 
+/*---------- NAVBAR | UNORDERED LIST | LISTED ITEMS | ANCHOR TAGS FOR ANIMATION
+WHERE FOR THE LAST-CHILD OF THE PARENT------------ */
 nav ul li a:last-child {
 	margin-right: 0;
 }
 
+/*---------- NAVBAR | UNORDERED LIST | LISTED ITEMS | ANCHOR TAGS FOR ANIMATION
+FOR THE BEFORE AND AFTER EFFECTS FOR ANIMATION E.G. COLOR, BACKGROUND ETC.------------ */
 nav ul li a::before,
 nav ul li a::after {
 	content: '';
@@ -96,6 +113,9 @@ nav ul li a::after {
 	transition: all .5s;
 }
 
+
+/*---------- NAVBAR | UNORDERED LIST | LISTED ITEMS | ANCHOR TAGS FOR ANIMATION
+WHERE THE DIRECTION OF THE LINES IS SPECIFIED------------ */
 nav ul li a::before {
 	top: 0;
 	transform-origin: left;
@@ -106,8 +126,9 @@ nav ul li a::after {
 	transform-origin: right;
 }
 
+
+/*---------- POSSIBLY DELETE THIS------------ */
 .overlay {
-	background-color: rgba(0, 0, 0, .95);
 	position: fixed;
 	right: 0;
 	left: 0;
@@ -119,12 +140,16 @@ nav ul li a::after {
 	display: none;
 }
 
+/*----------HOVER EFFECTS TO DICTATE THE ANIMATION-----*/
 nav ul li a:hover::before,
 nav ul li a:hover::after {
 	transform: scaleX(1);
 }
 
 
+
+
+/*----------SLIDER CSS-----*/
 #slider,
 .wrap,
 .slide-content {
@@ -136,16 +161,21 @@ nav ul li a:hover::after {
 	overflow-x: hidden;
 }
 
+/*----------WRAPPER TO DICTATE ARROW DIRECTION-----*/
 .wrapper {
 	position: relative;
 }
 
+
+/*---------SIZING FOR THE SLIDES-----*/
 .slide {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
+
+/*----------URL IMAGES FOR THE SLIDER-----*/
 .slide1 {
 	background-image: url("https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=ella-olsson-1128013-unsplash.jpg");
 }
@@ -158,6 +188,8 @@ nav ul li a:hover::after {
 	background-image: url("https://images.unsplash.com/photo-1551266519-b6713933ebd6?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=louis-hansel-1399003-unsplash.jpg");
 }
 
+
+/*----------ALIGNING THE SLIDES TO THE CENTRE USING FLEXBOX-----*/
 .slide-content {
 	display: flex;
 	flex-direction: column;
@@ -166,11 +198,14 @@ nav ul li a:hover::after {
 	text-align: center;
 }
 
+/*----------SPAN SLIDE-CONTENT-----*/
 .slide-content span {
 	font-size: 5rem;
 	color: #000000;
 }
 
+
+/*----------DICTATING WHAT ARROWS WILL LOOK LIKE-----*/
 .arrow {
 	cursor: pointer;
 	position: absolute;
@@ -181,25 +216,30 @@ nav ul li a:hover::after {
 	border-style: solid;
 }
 
+
+/*----------CSS FOR THE LEFT ARROW-----*/
 #arrow-left {
 	border-width: 30px 40px 30px 0;
-	border-color: transparent #fff transparent transparent;
+	border-color: transparent #ffffff transparent transparent;
 	left: 0;
 	margin-left: 30px;
 }
 
+/*----------CSS FOR THE RIGHT ARROW-----*/
 #arrow-right {
 	border-width: 30px 0 30px 40px;
-	border-color: transparent transparent transparent #fff;
+	border-color: transparent transparent transparent #ffffff;
 	right: 0;
 	margin-right: 30px;
 
 }
 
 
-#first-article {
+/*-------------------------FIRST ARTICLE ON ABOUT.HTML-------------------------*/
 
-	/*Flexbox Container*/
+
+/*----------PARENT CONTAINER-----*/
+#your-health {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -207,8 +247,8 @@ nav ul li a:hover::after {
 }
 
 
-
-#first-article article {
+/*----------CSS FOR THE ARTICLE-----*/
+#your-health article {
 	font-family: Arial;
 	font-size: 15px;
 	background-color: #ffffff;
@@ -222,30 +262,31 @@ nav ul li a:hover::after {
 
 }
 
-
-#first-article h2 {
+/*----------CSS FOR THE HEADING-----*/
+#your-health h2 {
 	font-family: Arial;
 
 }
 
-#first-article p {
+/*----------CSS FOR THE PARAGRAPH SECTION-----*/
+#your-health p {
 	font-family: Arial;
 	padding-top: 40px;
 
 }
 
-
-#first-article img {
+/*----------ALIGNING THE IMAGE-----*/
+#your-health img {
 	display: flex;
 	justify-content: space-between;
 }
 
 
 
+/*-------------------------SECOND ARTICLE ON ABOUT.HTML-------------------------*/
 
-#second-article {
-
-	/*Flexbox Container*/
+/*----------PARENT CONTAINER-----*/
+#our-beliefs {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -253,8 +294,8 @@ nav ul li a:hover::after {
 }
 
 
-
-#second-article article {
+/*----------CSS FOR THE ARTICLE-----*/
+#our-beliefs article {
 	font-family: Arial;
 	font-size: 15px;
 	background-color: #ffffff;
@@ -268,28 +309,32 @@ nav ul li a:hover::after {
 
 }
 
-
-#second-article h2 {
+/*----------CSS FOR THE HEADING-----*/
+#our-beliefs h2 {
 	font-family: Arial;
 
 }
 
-#second-article p {
+
+/*----------CSS FOR THE PARAGRAPH SECTION-----*/
+#our-beliefs p {
 	font-family: Arial;
 	padding-top: 40px;
 
 }
 
 
-#second-article img {
+/*----------ALIGNING THE IMAGE-----*/
+#our-beliefs img {
 	display: flex;
 	justify-content: space-between;
 }
 
 
-#third-article {
+/*-------------------------THIRD ARTICLE ON ABOUT.HTML-------------------------*/
 
-	/*Flexbox Container*/
+/*----------PARENT CONTAINER-----*/
+#their-myths {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -297,8 +342,8 @@ nav ul li a:hover::after {
 }
 
 
-
-#third-article article {
+/*----------CSS FOR THE ARTICLE-----*/
+#their-myths article {
 	font-family: Arial;
 	font-size: 15px;
 	background-color: #ffffff;
@@ -312,27 +357,37 @@ nav ul li a:hover::after {
 
 }
 
-
-#third-article h2 {
+/*----------CSS FOR THE HEADING-----*/
+#their-myths h2 {
 	font-family: Arial;
 
 }
 
-#third-article p {
+
+/*----------CSS FOR THE PARAGRAPH SECTION-----*/
+#their-myths p {
 	font-family: Arial;
 	padding-top: 40px;
 
 }
 
 
-#third-article img {
+/*----------ALIGNING THE IMAGE-----*/
+#their-myths img {
 	display: flex;
 	justify-content: space-between;
 }
 
 
 
-#info {
+
+
+
+/*-------------------------CONTACT.HTML-------------------------*/
+
+
+/*----------PARENT CONTAINER-----*/
+#required-form-info {
 	font-family: Arial;
 	font-size: 15px;
 	font-weight: bold;
@@ -342,16 +397,20 @@ nav ul li a:hover::after {
 
 }
 
-#info p {
+
+
+/*----------PARAGRAPH SECTION FOR FORM INSTRUCTIONS----*/
+#required-form-info p {
 	padding-bottom: 30px;
 	color: #cc0000;
 }
 
+/*----------PADDING FOR THE FORM-----*/
 form label {
 	padding-top: 25px;
 }
 
-
+/*----------PARENT CONTAINER FOR THE FORM AND ITS BOXES-----*/
 #contact-form {
 	font-family: Arial;
 	font-size: 15px;
@@ -363,7 +422,7 @@ form label {
 }
 
 
-
+/*----------ALIGNING THE LABELS OF THE FORM-----*/
 #contact-form form label {
 	text-align: center;
 	display: flex;
@@ -372,6 +431,8 @@ form label {
 	padding-top: 130;
 }
 
+
+/*----------ALIGNING AND STYLING THE INPUT BOXES OF THE FORM-----*/
 #contact-form input {
 	font-family: Arial;
 	font-size: 15px;
@@ -383,7 +444,8 @@ form label {
 
 }
 
-#message-form label {
+/*----------STYLING AND ALIGNING THE LABELS OF THE MESSAGE-BOX ID-----*/
+#message-box label {
 	font-family: Arial;
 	font-size: 15px;
 	font-weight: bold;
@@ -393,28 +455,35 @@ form label {
 	align-items: center;
 }
 
-#message-form input {
+/*----------STYLING THE INPUT BOXES OF THE MESSAGE-BOX ID-----*/
+#message-box input {
 	font-family: Arial;
 	font-size: 15px;
 	padding-bottom: 200px;
 	color: #000000;
 }
 
-input { 
+
+/*----------STYLING ALL INPUT BOXES-----*/
+input {
 	display: flex;
 	justify-content: space-around;
 	font-family: Arial;
 	font-size: 15px;
 }
 
-#submit-button {
+
+/*----------PARENT CONTAINER FOR THE BUTTON ON THE CONTACT PAGE-----*/
+#send-button {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	padding-top: 30px;
 }
 
-#submit-button input {
+
+/*----------STYLING THE INPUT ASPECT OF THE SEND-BUTTON-----*/
+#send-button input {
 	width: 150px;
 	height: 30px;
 	font-family: Arial;
@@ -425,165 +494,217 @@ input {
 	font-weight: bold;
 }
 
-
-#submit-button input:hover {
+/*----------CREATING AND STYLING A HOVER EFFECT FOR THE SEND BUTTON-----*/
+#send-button input:hover {
 	color: #ffffff;
 	background-color: #cc0000;
 	font-weight: bold;
 }
 
 
+
+
+/*-------------------------RECIPES.HTML-------------------------*/
+
+
+/*--------PARENT CONTAINER FOR THE FIRST ROW-------*/
 .recipe-row-one {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
-  font-family: Arial;
-  padding-top: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-family: Arial;
+	padding-top: 9%;
 
 }
 
+
+/*----------STYLING THE HEADING-----*/
 .recipe-row-one h3 {
-    padding-bottom: 20px;
-}
-
-.recipe-row-one #art-1, #art-2, #art-3  {
-    text-align: center;
-    font-family: Arial;
-    font-size: 15px;
+	padding-bottom: 20px;
+	padding-top: 30px;
 }
 
 
+/*---------STYLING AND ALIGNING THE FIRST THREE ARTICLE IDS-----*/
+.recipe-row-one #art-1,
+#art-2,
+#art-3 {
+	text-align: center;
+	font-family: Arial;
+	font-size: 15px;
+}
+
+/*----------STYLING THE ARTICLE-----*/
 .recipe-row-one article {
-    box-shadow: 5px 10px 8px #86be47;
-    margin-left: 20px;
-    padding-bottom: 20px
+	box-shadow: 5px 10px 8px #86be47;
+	margin-left: 20px;
+	padding-bottom: 20px
+}
+
+/*----------STYLING THE PARAGRAPH SECTION-----*/
+.recipe-row-one p {
+	padding-bottom: 30px;
 }
 
 
+/*----------STYLING THE BUTTONS FOR ROW ONE-----*/
 .recipe-row-one button {
-    width: 150px;
-    height: 30px;
-    font-family: Arial;
-    font-size: 15px;
-    border-radius: 60px;
-    color: #000000;
-    font-weight: bold;
-    background-color: #86be47;
+	width: 150px;
+	height: 30px;
+	font-family: Arial;
+	font-size: 15px;
+	border-radius: 60px;
+	color: #000000;
+	font-weight: bold;
+	background-color: #86be47;
 
 }
 
-
+/*----------CREATING AND STYLING A HOVER EFFECT FOR THE FIRST ROW OF BUTTONS-----*/
 .recipe-row-one button:hover {
-    color: #ffffff;
-    background-color: #000000;
-    font-weight: bold;
+	color: #ffffff;
+	background-color: #000000;
+	font-weight: bold;
 }
 
 
+/*--------PARENT CONTAINER FOR THE SECOND ROW-------*/
 .recipe-row-two {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
-  font-family: Arial;
-  padding-top: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-family: Arial;
+	padding-top: 9%;
 
 }
 
+/*----------STYLING THE HEADING-----*/
 .recipe-row-two h3 {
-    padding-bottom: 20px;
-}
-
-.recipe-row-two #art-4, #art-5, #art-6  {
-    text-align: center;
-    font-family: Arial;
-    font-size: 15px;
+	padding-bottom: 20px;
+	padding-top: 30px;
 }
 
 
+/*---------STYLING AND ALIGNING THE SECOND THREE ARTICLE IDS-----*/
+.recipe-row-two #art-4,
+#art-5,
+#art-6 {
+	text-align: center;
+	font-family: Arial;
+	font-size: 15px;
+}
+
+/*----------STYLING THE ARTICLE-----*/
 .recipe-row-two article {
-    box-shadow: 5px 10px 8px #86be47;
-    margin-left: 20px;
-    padding-bottom: 20px
+	box-shadow: 5px 10px 8px #86be47;
+	margin-left: 20px;
+	padding-bottom: 20px
+}
+
+/*----------STYLING THE PARAGRAPH SECTION-----*/
+.recipe-row-two p {
+	padding-bottom: 30px;
 }
 
 
+/*----------STYLING THE BUTTONS FOR ROW TWO-----*/
 .recipe-row-two button {
-    width: 150px;
-    height: 30px;
-    font-family: Arial;
-    font-size: 15px;
-    border-radius: 60px;
-    color: #000000;
-    font-weight: bold;
-    background-color: #86be47;
+	width: 150px;
+	height: 30px;
+	font-family: Arial;
+	font-size: 15px;
+	border-radius: 60px;
+	color: #000000;
+	font-weight: bold;
+	background-color: #86be47;
 
 }
 
-
+/*----------CREATING AND STYLING A HOVER EFFECT FOR THE SECOND ROW OF BUTTONS-----*/
 .recipe-row-two button:hover {
-    color: #ffffff;
-    background-color: #000000;
-    font-weight: bold;
+	color: #ffffff;
+	background-color: #000000;
+	font-weight: bold;
 }
 
 
-
+/*--------PARENT CONTAINER FOR THE THIRD ROW-------*/
 .recipe-row-three {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
-  font-family: Arial;
-  padding-top: 50px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-family: Arial;
+	padding-top: 9%;
 
 }
 
+/*----------STYLING THE HEADING-----*/
 .recipe-row-three h3 {
-    padding-bottom: 20px;
-}
-
-.recipe-row-three #art-7, #art-8, #art-9  {
-    text-align: center;
-    font-family: Arial;
-    font-size: 15px;
+	padding-bottom: 20px;
+	padding-top: 30px;
 }
 
 
+/*---------STYLING AND ALIGNING THE THIRD THREE ARTICLE IDS-----*/
+.recipe-row-three #art-7,
+#art-8,
+#art-9 {
+	text-align: center;
+	font-family: Arial;
+	font-size: 15px;
+}
+
+
+/*----------STYLING THE ARTICLE-----*/
 .recipe-row-three article {
-    box-shadow: 5px 10px 8px #86be47;
-    margin-left: 20px;
-    padding-bottom: 20px
+	box-shadow: 5px 10px 8px #86be47;
+	margin-left: 20px;
+	padding-bottom: 20px
 }
 
 
+/*----------STYLING THE PARAGRAPH SECTION-----*/
+.recipe-row-three p {
+	padding-bottom: 30px;
+}
+
+
+/*----------STYLING THE BUTTONS FOR ROW THREE-----*/
 .recipe-row-three button {
-    width: 150px;
-    height: 30px;
-    font-family: Arial;
-    font-size: 15px;
-    border-radius: 60px;
-    color: #000000;
-    font-weight: bold;
-    background-color: #86be47;
+	width: 150px;
+	height: 30px;
+	font-family: Arial;
+	font-size: 15px;
+	border-radius: 60px;
+	color: #000000;
+	font-weight: bold;
+	background-color: #86be47;
 
 }
 
 
+/*----------CREATING AND STYLING A HOVER EFFECT FOR THE THIRD ROW OF BUTTONS-----*/
 .recipe-row-three button:hover {
-    color: #ffffff;
-    background-color: #000000;
-    font-weight: bold;
+	color: #ffffff;
+	background-color: #000000;
+	font-weight: bold;
 }
 
 
+/*-----------------------------ALL PAGES----------------------------------*/
+
+
+/*--------STYLING THE FOOTER'S PARENT-------*/
 
 footer {
 	padding-top: 30px;
 	padding-bottom: 30px
 }
 
+/*--------STYLING THE FOOTER | UNORDERED LIST | LISTED ITEMS------*/
 footer ul li {
 	font-size: 12px;
 	display: inline;
@@ -592,6 +713,7 @@ footer ul li {
 }
 
 
+/*-------STYLING THE IMAGES IN THE FOOTER--------*/
 footer img {
 	float: right;
 	padding: 10px;
@@ -599,7 +721,7 @@ footer img {
 }
 
 
-
+/*--------KEYFRAMES FOR THE NAVBAR ANIMATION TO DETERMINE HOW IT'LL SLIDE IN-------*/
 @keyframes slideIn {
 	from {}
 	to {
@@ -607,12 +729,21 @@ footer img {
 	}
 }
 
+
+
+
+/*----------------------------MOBILE RESIZING-----------------------------*/
+
+/*----------SCREEN WILL HAVE A MAXIMUM WIDTH OF 700PX--------*/
 @media screen and (max-width: 700px) {
 
+
+/*-------MOBILE MENU STYLING--------*/
 	.menu-toggle {
 		display: block;
 	}
 
+/*-------NAV STYLING AND ALIGNMENT USING FLEXBOX--------*/
 	nav {
 		padding-top: 0;
 		display: none;
@@ -623,20 +754,24 @@ footer img {
 		text-align: center;
 	}
 
+/*-------NAV | UNORDERED LIST ALIGNMENT--------*/
 	nav ul {
 		flex-direction: column;
 	}
 
+/*-------NAV | UNORDERED LIST | LISTED ITEMS STYLING--------*/
 	nav ul li {
 		margin-top: 5rem;
 	}
 
+
+/*-------NAV | UNORDERED LIST | LISTED ITEMS | ANCHOR TAGS STYLING--------*/
 	nav ul li a {
 		margin: 0;
 		font-size: 2.5rem;
 	}
 
-
+/*-------STYLING THE MOBILE MENU--------*/
 	.overlay.menu-open,
 	nav.menu-open {
 		display: flex;
