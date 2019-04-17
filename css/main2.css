@@ -127,18 +127,6 @@ nav ul li a::after {
 }
 
 
-/*---------- POSSIBLY DELETE THIS------------ */
-.overlay {
-	position: fixed;
-	right: 0;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	transition: opacity 650ms;
-	transform: scale(0);
-	opacity: 0;
-	display: none;
-}
 
 /*----------HOVER EFFECTS TO DICTATE THE ANIMATION-----*/
 nav ul li a:hover::before,
@@ -718,6 +706,35 @@ footer img {
 	float: right;
 	padding: 10px;
 
+}
+
+
+
+/*.................PRIVACY POLICY...............*/
+#policies_heading {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	text-align: center;
+}
+
+.policies_content {
+	font-family: Arial;
+	font-size: 12px;
+	padding-left: 20px;
+}
+
+#rights_heading h2 {
+	font-family: Arial;
+	font-size: 19px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.rights_content {
+	font-family: Arial;
+	font-size: 12px;
+	padding-left: 20px
 }
 
 
