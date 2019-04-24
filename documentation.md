@@ -10,7 +10,7 @@ The final product will also need to be mobile and desktop responsive.
 ## 1.1.2 WireFrames
 
 ![](imgs/home_desktop.png)
-![](imgs/about_desktop.png)
+![](about_desktop.png)
 ![](imgs/recipes_desktop.png)
 ![](imgs/contact_desktop.png)
 
@@ -18,6 +18,7 @@ The final product will also need to be mobile and desktop responsive.
 ![](imgs/about_mobile.png)
 ![](imgs/recipes_mobile.png)
 ![](imgs/contact_mobile.png)
+
 
 
 ## 1.1.3 Colour Choices

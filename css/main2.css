@@ -476,15 +476,15 @@ input {
 	font-family: Arial;
 	font-size: 15px;
 	border-radius: 60px;
-	color: #ffffff;
-	background-color: #000000;
+	color: #000000;
+	background-color: #86be47;
 	font-weight: bold;
 }
 
 /*----------CREATING AND STYLING A HOVER EFFECT FOR THE SEND BUTTON-----*/
 #send-button input:hover {
 	color: #ffffff;
-	background-color: #cc0000;
+	background-color: #000000;
 	font-weight: bold;
 }
 
@@ -687,16 +687,18 @@ input {
 /*--------STYLING THE FOOTER'S PARENT-------*/
 
 footer {
-	padding-top: 30px;
+	font-size: 12px;
+	font-family: Arial;
+	padding-top: 50px;
 	padding-bottom: 30px
+
 }
 
-/*--------STYLING THE FOOTER | UNORDERED LIST | LISTED ITEMS------*/
-footer ul li {
-	font-size: 12px;
-	display: inline;
-	padding: 30px;
-	color: #000000;
+
+
+/*............STYLING THE PRIVACY POLICY LINK.......*/
+footer a {
+	margin: 50px;
 }
 
 
@@ -879,15 +881,15 @@ input {
 	font-family: Arial;
 	font-size: 15px;
 	border-radius: 60px;
-	color: #ffffff;
-	background-color: #000000;
+	color: #000000;
+	background-color: #86be47;;
 	font-weight: bold;
 }
 
 /*----------CREATING AND STYLING A HOVER EFFECT FOR THE SEND BUTTON-----*/
 #send-button input:hover {
 	color: #ffffff;
-	background-color: #cc0000;
+	background-color: #000000;
 	font-weight: bold;
 }
 
@@ -975,4 +977,34 @@ input {
 .recipe-row-three #art-7, #art-8, #art-9 {
 	margin-bottom: 100px;
 }
+
+
+
+
+/*--------STYLING THE FOOTER'S PARENT-------*/
+
+footer {
+	font-size: 12px;
+	font-family: Arial;
+	padding-top: 50px;
+	padding-bottom: 30px;
+
 }
+
+
+
+/*............STYLING THE PRIVACY POLICY LINK.......*/
+footer a {
+	margin: 20px;
+}
+
+
+/*-------STYLING THE IMAGES IN THE FOOTER--------*/
+footer img {
+	float: right;
+
+}
+
+}
+
+

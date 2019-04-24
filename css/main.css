@@ -185,17 +185,15 @@ nav ul li a:hover::after {
 
 /*----------STYLING THE ANCHOR TAG OF THE BUTTON-----*/
 
-button a {
-	color: #000000;
-}
 
 /*----------STYLING THE BUTTON THAT'S PLACED IN THE PARENT CONTAINER-----*/
 
-.container button {
+.container button a {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	color: #000000;
+	background-color: #86be47;
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, 0);
@@ -212,10 +210,9 @@ button a {
 
 /*----------ADDING A HOVER EFFECT TO THE BUTTON IN THE PARENT CONTAINER-----*/
 
-.container button:hover {
-	color: #000000;
-	background-color: #86be47;
-	border-color: #86be47;
+.container button:hover a {
+	color: #ffffff;
+	background-color: #000000;
 	font-family: Arial;
 	font-size: 12px;
 	font-weight: bold;
