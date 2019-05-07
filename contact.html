@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/form.js"> </script>
     <link rel="stylesheet" type="text/css" href="css/main2.css">
     <title>Vegan Detox</title>
 </head>
@@ -112,22 +113,25 @@ startSlide();
 <div id="contact-form">
     
                 
-           <form>
+        <form id="theForm" action="message.html" method="post" onSubmit="return validateTextbox();">
                
                     
            <p><label>Name</label>
            <br />
-           <input type="text" name="name" required></p>
+           <input type="text" id="name"></p>
+        
+        
+        
         
             <p><label>Email</label>
               <br />
-            <input type="email" name="email" required></p>
+            <input type="email" id="email"></p>
           
            
            <div id="message-box">
             <p><label>Message</label>
               <br />
-            <input type="text" name="message" required></p>
+            <input type="text" id="message"></p>
             </div>
             
                   <div id="send-button">
