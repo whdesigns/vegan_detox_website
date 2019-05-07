@@ -54,7 +54,7 @@ To ensure users can trust the legitimacy of Vegan Detox a privacy policy was cre
 This is a legal requirement even though the site is not ecommerce related. As long as personal information is being collected e.g. email addresses, 
 then a policy will be required to specify that we will not share or sell any personal information to third parties.  
 
-Images of the privacy policy can be seen below: 
+Wireframes can be seen below: 
 
 ![](imgs/privacy_policy_desktop.png)
 ![](imgs/privacy_policy_mobile.png)
