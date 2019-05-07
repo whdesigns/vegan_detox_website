@@ -7,6 +7,7 @@
 
 
 /*---------- MAIN DOCUMENT (PART 1)------------ */
+
 html {
 	font-size: 10px;
 	font-family: Arial;
@@ -14,6 +15,7 @@ html {
 }
 
 /*---------- MAIN DOCUMENT (PART 2)------------ */
+
 body {
 	background-color: #ffffff;
 
@@ -21,12 +23,14 @@ body {
 
 
 /*---------- ALL ANCHOR TAGS------------ */
+
 a {
 	text-decoration: none;
 	color: #000000;
 }
 
 /*---------- HEADER SIZING------------ */
+
 .container {
 	max-width: 120rem;
 	width: 90%;
@@ -34,6 +38,7 @@ a {
 }
 
 /*---------- MOBILE MENU------------ */
+
 .menu-toggle {
 	position: fixed;
 	top: 2.5rem;
@@ -46,6 +51,7 @@ a {
 }
 
 /*---------- NAVBAR------------ */
+
 nav {
 	padding-top: 5rem;
 	display: flex;
@@ -57,11 +63,13 @@ nav {
 
 
 /*---------- NAVBAR | UNORDERED LIST------------ */
+
 nav ul {
 	display: flex;
 }
 
 /*---------- NAVBAR | UNORDERED LIST | LISTED ITEMS------------ */
+
 nav ul li {
 	list-style: none;
 	transform: translateX(100rem);
@@ -69,6 +77,7 @@ nav ul li {
 }
 
 /*---------- ANIMATION FOR DESKTOP NAVBAR------------ */
+
 nav ul li:nth-child(1) {
 	animation-delay: 0s;
 }
@@ -86,6 +95,7 @@ nav ul li:nth-child(4) {
 }
 
 /*---------- NAVBAR | UNORDERED LIST | LISTED ITEMS | ANCHOR TAGS FOR ANIMATION------------ */
+
 nav ul li a {
 	padding: 1rem 0;
 	margin: 0 3rem;
@@ -95,12 +105,14 @@ nav ul li a {
 
 /*---------- NAVBAR | UNORDERED LIST | LISTED ITEMS | ANCHOR TAGS FOR ANIMATION
 WHERE FOR THE LAST-CHILD OF THE PARENT------------ */
+
 nav ul li a:last-child {
 	margin-right: 0;
 }
 
 /*---------- NAVBAR | UNORDERED LIST | LISTED ITEMS | ANCHOR TAGS FOR ANIMATION
 FOR THE BEFORE AND AFTER EFFECTS FOR ANIMATION E.G. COLOR, BACKGROUND ETC.------------ */
+
 nav ul li a::before,
 nav ul li a::after {
 	content: '';
@@ -116,6 +128,7 @@ nav ul li a::after {
 
 /*---------- NAVBAR | UNORDERED LIST | LISTED ITEMS | ANCHOR TAGS FOR ANIMATION
 WHERE THE DIRECTION OF THE LINES IS SPECIFIED------------ */
+
 nav ul li a::before {
 	top: 0;
 	transform-origin: left;
@@ -129,6 +142,7 @@ nav ul li a::after {
 
 
 /*----------HOVER EFFECTS TO DICTATE THE ANIMATION-----*/
+
 nav ul li a:hover::before,
 nav ul li a:hover::after {
 	transform: scaleX(1);
@@ -138,6 +152,7 @@ nav ul li a:hover::after {
 
 
 /*----------SLIDER CSS-----*/
+
 #slider,
 .wrap,
 .slide-content {
@@ -150,12 +165,14 @@ nav ul li a:hover::after {
 }
 
 /*----------WRAPPER TO DICTATE ARROW DIRECTION-----*/
+
 .wrapper {
 	position: relative;
 }
 
 
 /*---------SIZING FOR THE SLIDES-----*/
+
 .slide {
 	background-size: cover;
 	background-position: center;
@@ -163,7 +180,8 @@ nav ul li a:hover::after {
 }
 
 
-/*----------URL IMAGES FOR THE SLIDER-----*/
+/*----------URL UNSPLASH IMAGES FOR THE SLIDER-----*/
+
 .slide1 {
 	background-image: url("https://images.unsplash.com/photo-1541014741259-de529411b96a?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&dl=ella-olsson-1128013-unsplash.jpg");
 }
@@ -178,6 +196,7 @@ nav ul li a:hover::after {
 
 
 /*----------ALIGNING THE SLIDES TO THE CENTRE USING FLEXBOX-----*/
+
 .slide-content {
 	display: flex;
 	flex-direction: column;
@@ -187,6 +206,7 @@ nav ul li a:hover::after {
 }
 
 /*----------SPAN SLIDE-CONTENT-----*/
+
 .slide-content span {
 	font-size: 5rem;
 	color: #000000;
@@ -194,6 +214,7 @@ nav ul li a:hover::after {
 
 
 /*----------DICTATING WHAT ARROWS WILL LOOK LIKE-----*/
+
 .arrow {
 	cursor: pointer;
 	position: absolute;
@@ -206,6 +227,7 @@ nav ul li a:hover::after {
 
 
 /*----------CSS FOR THE LEFT ARROW-----*/
+
 #arrow-left {
 	border-width: 30px 40px 30px 0;
 	border-color: transparent #ffffff transparent transparent;
@@ -214,6 +236,7 @@ nav ul li a:hover::after {
 }
 
 /*----------CSS FOR THE RIGHT ARROW-----*/
+
 #arrow-right {
 	border-width: 30px 0 30px 40px;
 	border-color: transparent transparent transparent #ffffff;
@@ -225,8 +248,8 @@ nav ul li a:hover::after {
 
 /*-------------------------FIRST ARTICLE ON ABOUT.HTML-------------------------*/
 
-
 /*----------PARENT CONTAINER-----*/
+
 #your-health {
 	display: flex;
 	justify-content: space-around;
@@ -236,6 +259,7 @@ nav ul li a:hover::after {
 
 
 /*----------CSS FOR THE ARTICLE-----*/
+
 #your-health article {
 	font-family: Arial;
 	font-size: 15px;
@@ -251,12 +275,14 @@ nav ul li a:hover::after {
 }
 
 /*----------CSS FOR THE HEADING-----*/
+
 #your-health h2 {
 	font-family: Arial;
 
 }
 
 /*----------CSS FOR THE PARAGRAPH SECTION-----*/
+
 #your-health p {
 	font-family: Arial;
 	padding-top: 40px;
@@ -264,6 +290,7 @@ nav ul li a:hover::after {
 }
 
 /*----------ALIGNING THE IMAGE-----*/
+
 #your-health img {
 	display: flex;
 	justify-content: space-between;
@@ -274,6 +301,7 @@ nav ul li a:hover::after {
 /*-------------------------SECOND ARTICLE ON ABOUT.HTML-------------------------*/
 
 /*----------PARENT CONTAINER-----*/
+
 #our-beliefs {
 	display: flex;
 	justify-content: space-around;
@@ -283,6 +311,7 @@ nav ul li a:hover::after {
 
 
 /*----------CSS FOR THE ARTICLE-----*/
+
 #our-beliefs article {
 	font-family: Arial;
 	font-size: 15px;
@@ -298,6 +327,7 @@ nav ul li a:hover::after {
 }
 
 /*----------CSS FOR THE HEADING-----*/
+
 #our-beliefs h2 {
 	font-family: Arial;
 
@@ -305,6 +335,7 @@ nav ul li a:hover::after {
 
 
 /*----------CSS FOR THE PARAGRAPH SECTION-----*/
+
 #our-beliefs p {
 	font-family: Arial;
 	padding-top: 40px;
@@ -313,6 +344,7 @@ nav ul li a:hover::after {
 
 
 /*----------ALIGNING THE IMAGE-----*/
+
 #our-beliefs img {
 	display: flex;
 	justify-content: space-between;
@@ -322,6 +354,7 @@ nav ul li a:hover::after {
 /*-------------------------THIRD ARTICLE ON ABOUT.HTML-------------------------*/
 
 /*----------PARENT CONTAINER-----*/
+
 #their-myths {
 	display: flex;
 	justify-content: space-around;
@@ -331,6 +364,7 @@ nav ul li a:hover::after {
 
 
 /*----------CSS FOR THE ARTICLE-----*/
+
 #their-myths article {
 	font-family: Arial;
 	font-size: 15px;
@@ -346,6 +380,7 @@ nav ul li a:hover::after {
 }
 
 /*----------CSS FOR THE HEADING-----*/
+
 #their-myths h2 {
 	font-family: Arial;
 
@@ -353,6 +388,7 @@ nav ul li a:hover::after {
 
 
 /*----------CSS FOR THE PARAGRAPH SECTION-----*/
+
 #their-myths p {
 	font-family: Arial;
 	padding-top: 40px;
@@ -361,6 +397,7 @@ nav ul li a:hover::after {
 
 
 /*----------ALIGNING THE IMAGE-----*/
+
 #their-myths img {
 	display: flex;
 	justify-content: space-between;
@@ -373,8 +410,8 @@ nav ul li a:hover::after {
 
 /*-------------------------CONTACT.HTML-------------------------*/
 
-
 /*----------PARENT CONTAINER-----*/
+
 #required-form-info {
 	font-family: Arial;
 	font-size: 15px;
@@ -388,17 +425,20 @@ nav ul li a:hover::after {
 
 
 /*----------PARAGRAPH SECTION FOR FORM INSTRUCTIONS----*/
+
 #required-form-info p {
 	padding-bottom: 30px;
 	color: #cc0000;
 }
 
 /*----------PADDING FOR THE FORM-----*/
+
 form label {
 	padding-top: 25px;
 }
 
 /*----------PARENT CONTAINER FOR THE FORM AND ITS BOXES-----*/
+
 #contact-form {
 	font-family: Arial;
 	font-size: 15px;
@@ -411,6 +451,7 @@ form label {
 
 
 /*----------ALIGNING THE LABELS OF THE FORM-----*/
+
 #contact-form form label {
 	text-align: center;
 	display: flex;
@@ -421,6 +462,7 @@ form label {
 
 
 /*----------ALIGNING AND STYLING THE INPUT BOXES OF THE FORM-----*/
+
 #contact-form input {
 	font-family: Arial;
 	font-size: 15px;
@@ -432,6 +474,7 @@ form label {
 }
 
 /*----------STYLING AND ALIGNING THE LABELS OF THE MESSAGE-BOX ID-----*/
+
 #message-box label {
 	font-family: Arial;
 	font-size: 15px;
@@ -443,6 +486,7 @@ form label {
 }
 
 /*----------STYLING THE INPUT BOXES OF THE MESSAGE-BOX ID-----*/
+
 #message-box input {
 	font-family: Arial;
 	font-size: 15px;
@@ -452,6 +496,7 @@ form label {
 
 
 /*----------STYLING ALL INPUT BOXES-----*/
+
 input {
 	display: flex;
 	justify-content: space-around;
@@ -461,6 +506,7 @@ input {
 
 
 /*----------PARENT CONTAINER FOR THE BUTTON ON THE CONTACT PAGE-----*/
+
 #send-button {
 	display: flex;
 	justify-content: space-around;
@@ -470,18 +516,21 @@ input {
 
 
 /*----------STYLING THE INPUT ASPECT OF THE SEND-BUTTON-----*/
+
 #send-button input {
-	width: 150px;
-	height: 30px;
+	width: 250px;
+	height: 60px;
 	font-family: Arial;
-	font-size: 15px;
+	font-size: 25px;
 	border-radius: 60px;
 	color: #000000;
 	background-color: #86be47;
 	font-weight: bold;
+
 }
 
 /*----------CREATING AND STYLING A HOVER EFFECT FOR THE SEND BUTTON-----*/
+
 #send-button input:hover {
 	color: #ffffff;
 	background-color: #000000;
@@ -493,8 +542,8 @@ input {
 
 /*-------------------------RECIPES.HTML-------------------------*/
 
-
 /*--------PARENT CONTAINER FOR THE FIRST ROW-------*/
+
 .recipe-row-one {
 	display: flex;
 	flex-direction: row;
@@ -507,6 +556,7 @@ input {
 
 
 /*----------STYLING THE HEADING-----*/
+
 .recipe-row-one h3 {
 	padding-bottom: 20px;
 	padding-top: 30px;
@@ -514,6 +564,7 @@ input {
 
 
 /*---------STYLING AND ALIGNING THE FIRST THREE ARTICLE IDS-----*/
+
 .recipe-row-one #art-1,
 #art-2,
 #art-3 {
@@ -523,6 +574,7 @@ input {
 }
 
 /*----------STYLING THE ARTICLE-----*/
+
 .recipe-row-one article {
 	box-shadow: 5px 10px 8px #86be47;
 	margin-left: 20px;
@@ -530,33 +582,35 @@ input {
 }
 
 /*----------STYLING THE PARAGRAPH SECTION-----*/
+
 .recipe-row-one p {
 	padding-bottom: 30px;
 }
 
 
 /*----------STYLING THE BUTTONS FOR ROW ONE-----*/
+
 .recipe-row-one button {
-	width: 150px;
-	height: 30px;
+	font-size: 20px;
+	border-radius: 40px;
+	width: 250px;
 	font-family: Arial;
-	font-size: 15px;
-	border-radius: 60px;
+	background: #86be47;
 	color: #000000;
-	font-weight: bold;
-	background-color: #86be47;
+	height: 60px;
 
 }
 
 /*----------CREATING AND STYLING A HOVER EFFECT FOR THE FIRST ROW OF BUTTONS-----*/
+
 .recipe-row-one button:hover {
+	background: #000000;
 	color: #ffffff;
-	background-color: #000000;
-	font-weight: bold;
 }
 
 
 /*--------PARENT CONTAINER FOR THE SECOND ROW-------*/
+
 .recipe-row-two {
 	display: flex;
 	flex-direction: row;
@@ -568,6 +622,7 @@ input {
 }
 
 /*----------STYLING THE HEADING-----*/
+
 .recipe-row-two h3 {
 	padding-bottom: 20px;
 	padding-top: 30px;
@@ -575,6 +630,7 @@ input {
 
 
 /*---------STYLING AND ALIGNING THE SECOND THREE ARTICLE IDS-----*/
+
 .recipe-row-two #art-4,
 #art-5,
 #art-6 {
@@ -584,6 +640,7 @@ input {
 }
 
 /*----------STYLING THE ARTICLE-----*/
+
 .recipe-row-two article {
 	box-shadow: 5px 10px 8px #86be47;
 	margin-left: 20px;
@@ -591,33 +648,35 @@ input {
 }
 
 /*----------STYLING THE PARAGRAPH SECTION-----*/
+
 .recipe-row-two p {
 	padding-bottom: 30px;
 }
 
 
 /*----------STYLING THE BUTTONS FOR ROW TWO-----*/
+
 .recipe-row-two button {
-	width: 150px;
-	height: 30px;
+	font-size: 20px;
+	border-radius: 40px;
+	width: 250px;
 	font-family: Arial;
-	font-size: 15px;
-	border-radius: 60px;
+	background: #86be47;
 	color: #000000;
-	font-weight: bold;
-	background-color: #86be47;
+	height: 60px;
 
 }
 
 /*----------CREATING AND STYLING A HOVER EFFECT FOR THE SECOND ROW OF BUTTONS-----*/
+
 .recipe-row-two button:hover {
+	background: #000000;
 	color: #ffffff;
-	background-color: #000000;
-	font-weight: bold;
 }
 
 
 /*--------PARENT CONTAINER FOR THE THIRD ROW-------*/
+
 .recipe-row-three {
 	display: flex;
 	flex-direction: row;
@@ -629,6 +688,7 @@ input {
 }
 
 /*----------STYLING THE HEADING-----*/
+
 .recipe-row-three h3 {
 	padding-bottom: 20px;
 	padding-top: 30px;
@@ -636,6 +696,7 @@ input {
 
 
 /*---------STYLING AND ALIGNING THE THIRD THREE ARTICLE IDS-----*/
+
 .recipe-row-three #art-7,
 #art-8,
 #art-9 {
@@ -646,6 +707,7 @@ input {
 
 
 /*----------STYLING THE ARTICLE-----*/
+
 .recipe-row-three article {
 	box-shadow: 5px 10px 8px #86be47;
 	margin-left: 20px;
@@ -654,35 +716,38 @@ input {
 
 
 /*----------STYLING THE PARAGRAPH SECTION-----*/
+
 .recipe-row-three p {
 	padding-bottom: 30px;
 }
 
 
 /*----------STYLING THE BUTTONS FOR ROW THREE-----*/
+
 .recipe-row-three button {
-	width: 150px;
-	height: 30px;
+	font-size: 20px;
+	border-radius: 40px;
+	width: 250px;
 	font-family: Arial;
-	font-size: 15px;
-	border-radius: 60px;
+	background: #86be47;
 	color: #000000;
-	font-weight: bold;
-	background-color: #86be47;
+	height: 60px;
 
 }
 
 
 /*----------CREATING AND STYLING A HOVER EFFECT FOR THE THIRD ROW OF BUTTONS-----*/
+
 .recipe-row-three button:hover {
+	background: #000000;
 	color: #ffffff;
-	background-color: #000000;
-	font-weight: bold;
 }
 
 
-/*-----------------------------ALL PAGES----------------------------------*/
 
+
+
+/*-----------------------------ALL PAGES----------------------------------*/
 
 /*--------STYLING THE FOOTER'S PARENT-------*/
 
@@ -691,18 +756,19 @@ footer {
 	font-family: Arial;
 	padding-top: 50px;
 	padding-bottom: 30px
-
 }
 
 
 
 /*............STYLING THE PRIVACY POLICY LINK.......*/
+
 footer a {
 	margin: 50px;
 }
 
 
 /*-------STYLING THE IMAGES IN THE FOOTER--------*/
+
 footer img {
 	float: right;
 	padding: 10px;
@@ -712,21 +778,25 @@ footer img {
 
 
 /*.................PRIVACY POLICY...............*/
+
 #policies_heading {
 	padding-top: 70px;
 	padding-bottom: 70px;
 	text-align: center;
 }
 
-.policies_content {
+.policies_content h3, p {
 	font-family: Arial;
-	font-size: 12px;
+	font-size: 15px;
+	line-height: 2.0;
 	padding-left: 20px;
 }
 
+
+
 #rights_heading h2 {
 	font-family: Arial;
-	font-size: 19px;
+	font-size: 20px;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	text-align: center;
@@ -734,12 +804,14 @@ footer img {
 
 .rights_content {
 	font-family: Arial;
-	font-size: 12px;
+	font-size: 15px;
+	line-height: 2.0;
 	padding-left: 20px
 }
 
 
 /*--------KEYFRAMES FOR THE NAVBAR ANIMATION TO DETERMINE HOW IT'LL SLIDE IN-------*/
+
 @keyframes slideIn {
 	from {}
 	to {
@@ -753,6 +825,7 @@ footer img {
 /*----------------------------MOBILE RESIZING-----------------------------*/
 
 /*----------SCREEN WILL HAVE A MAXIMUM WIDTH OF 700PX--------*/
+
 @media screen and (max-width: 700px) {
 
 
@@ -770,241 +843,238 @@ footer img {
 	}
 
 
-li {
-	margin: 10px;
+	li {
+		margin: 10px;
 
-}
-
-
-/*-------------------------CONTACT.HTML-------------------------*/
+	}
 
 
-/*----------PARENT CONTAINER-----*/
-#required-form-info {
-	font-family: Arial;
-	font-size: 15px;
-	font-weight: bold;
-	padding: 50px;
-	text-align: center;
-	margin: 30px;
+	/*-------------------------CONTACT.HTML-------------------------*/
+	/*----------PARENT CONTAINER-----*/
+	#required-form-info {
+		font-family: Arial;
+		font-size: 15px;
+		font-weight: bold;
+		padding: 50px;
+		text-align: center;
+		margin: 30px;
 
-}
+	}
 
 
 
-/*----------PARAGRAPH SECTION FOR FORM INSTRUCTIONS----*/
-#required-form-info p {
-	padding-bottom: 30px;
-	color: #cc0000;
-}
+	/*----------PARAGRAPH SECTION FOR FORM INSTRUCTIONS----*/
+	#required-form-info p {
+		padding-bottom: 30px;
+		color: #cc0000;
+	}
 
-/*----------PADDING FOR THE FORM-----*/
-form label {
-	padding-top: 25px;
-}
+	/*----------PADDING FOR THE FORM-----*/
+	form label {
+		padding-top: 25px;
+	}
 
-/*----------PARENT CONTAINER FOR THE FORM AND ITS BOXES-----*/
-#contact-form {
-	font-family: Arial;
-	font-size: 15px;
-	font-weight: bold;
-	color: #000000;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
-
-/*----------ALIGNING THE LABELS OF THE FORM-----*/
-#contact-form form label {
-	text-align: center;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding-top: 30px;
-}
+	/*----------PARENT CONTAINER FOR THE FORM AND ITS BOXES-----*/
+	#contact-form {
+		font-family: Arial;
+		font-size: 15px;
+		font-weight: bold;
+		color: #000000;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
 
 
-/*----------ALIGNING AND STYLING THE INPUT BOXES OF THE FORM-----*/
-#contact-form input {
-	font-family: Arial;
-	font-size: 15px;
-	width: 300px;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-
-}
-
-/*----------STYLING AND ALIGNING THE LABELS OF THE MESSAGE-BOX ID-----*/
-#message-box label {
-	font-family: Arial;
-	font-size: 15px;
-	font-weight: bold;
-	color: #000000;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-
-/*----------STYLING THE INPUT BOXES OF THE MESSAGE-BOX ID-----*/
-#message-box input {
-	font-family: Arial;
-	font-size: 15px;
-	padding-bottom: 200px;
-	color: #000000;
-}
+	/*----------ALIGNING THE LABELS OF THE FORM-----*/
+	#contact-form form label {
+		text-align: center;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding-top: 30px;
+	}
 
 
-/*----------STYLING ALL INPUT BOXES-----*/
-input {
-	display: flex;
-	justify-content: space-around;
-	font-family: Arial;
-	font-size: 15px;
-}
+	/*----------ALIGNING AND STYLING THE INPUT BOXES OF THE FORM-----*/
+	#contact-form input {
+		font-family: Arial;
+		font-size: 15px;
+		width: 300px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+	}
+
+	/*----------STYLING AND ALIGNING THE LABELS OF THE MESSAGE-BOX ID-----*/
+	#message-box label {
+		font-family: Arial;
+		font-size: 15px;
+		font-weight: bold;
+		color: #000000;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	/*----------STYLING THE INPUT BOXES OF THE MESSAGE-BOX ID-----*/
+	#message-box input {
+		font-family: Arial;
+		font-size: 15px;
+		padding-bottom: 200px;
+		color: #000000;
+	}
 
 
-/*----------PARENT CONTAINER FOR THE BUTTON ON THE CONTACT PAGE-----*/
-#send-button {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	padding-top: 30px;
-}
+	/*----------STYLING ALL INPUT BOXES-----*/
+	input {
+		display: flex;
+		justify-content: space-around;
+		font-family: Arial;
+		font-size: 15px;
+	}
 
 
-/*----------STYLING THE INPUT ASPECT OF THE SEND-BUTTON-----*/
-#send-button input {
-	width: 150px;
-	height: 30px;
-	font-family: Arial;
-	font-size: 15px;
-	border-radius: 60px;
-	color: #000000;
-	background-color: #86be47;;
-	font-weight: bold;
-}
+	/*----------PARENT CONTAINER FOR THE BUTTON ON THE CONTACT PAGE-----*/
+	#send-button {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding-top: 30px;
+	}
 
-/*----------CREATING AND STYLING A HOVER EFFECT FOR THE SEND BUTTON-----*/
-#send-button input:hover {
-	color: #ffffff;
-	background-color: #000000;
-	font-weight: bold;
-}
 
+	/*----------STYLING THE INPUT ASPECT OF THE SEND-BUTTON-----*/
+	#send-button input {
+		width: 250px;
+		height: 60px;
+		font-family: Arial;
+		font-size: 25px;
+		border-radius: 60px;
+		color: #000000;
+		background-color: #86be47;
+		
+		font-weight: bold;
+	}
+
+	/*----------CREATING AND STYLING A HOVER EFFECT FOR THE SEND BUTTON-----*/
+	#send-button input:hover {
+		color: #ffffff;
+		background-color: #000000;
+		font-weight: bold;
+	}
 
 
 
 
+	/*-------------------------ABOUT US.HTML-------------------------*/
+	#your-health {
+		display: column;
+		flex-direction: column;
+		padding: 20px;
+		padding-top: 100px;
+	}
 
-/*-------------------------ABOUT US.HTML-------------------------*/
-
-#your-health {
-	display: column;
-	flex-direction: column;
-	padding: 20px;
-	padding-top: 100px;
-}
-
-#your-health img {
-	padding-top: 100px;
-}
+	#your-health img {
+		padding-top: 100px;
+	}
 
 
-#our-beliefs {
-	display: column;
-	flex-direction: column;
-	padding: 20px;
-	padding-top: 
-	padding-bottom: 100px;
-}
+	#our-beliefs {
+		display: column;
+		flex-direction: column;
+		padding: 20px;
+		padding-top: padding-bottom: 100px;
+	}
 
-#our-beliefs article {
-	margin-top: 100px;
-}
-
-#their-myths {
-	display: column;
-	flex-direction: column;
-	padding: 20px;
-}
-
-#their-myths article {
+	#our-beliefs article {
 		margin-top: 100px;
-}
+	}
 
-#their-myths img {
-	padding-top: 100px;
-	
-}
-
-
-
-/*-------------------------RECIPES.HTML-------------------------*/
-
-.recipe-row-one {
+	#their-myths {
 		display: column;
-	flex-direction: column;
-	padding: 20px;
-	padding-top: 100px;
-}
+		flex-direction: column;
+		padding: 20px;
+	}
 
-.recipe-row-one #art-1, #art-2, #art-3 {
-	margin-bottom: 100px;
-}
+	#their-myths article {
+		margin-top: 100px;
+	}
 
-.recipe-row-two {
-			display: column;
-	flex-direction: column;
-	padding: 20px;
-	padding-top: 100px;
-}
+	#their-myths img {
+		padding-top: 100px;
+
+	}
 
 
-.recipe-row-two #art-4, #art-5, #art-6 {
-	margin-bottom: 100px;
-}
 
-
-.recipe-row-three {
+	/*-------------------------RECIPES.HTML-------------------------*/
+	.recipe-row-one {
 		display: column;
-	flex-direction: column;
-	padding: 20px;
-	padding-top: 100px;	
+		flex-direction: column;
+		padding: 20px;
+		padding-top: 100px;
+	}
+
+	.recipe-row-one #art-1,
+	#art-2,
+	#art-3 {
+		margin-bottom: 100px;
+	}
+
+	.recipe-row-two {
+		display: column;
+		flex-direction: column;
+		padding: 20px;
+		padding-top: 100px;
+	}
+
+
+	.recipe-row-two #art-4,
+	#art-5,
+	#art-6 {
+		margin-bottom: 100px;
+	}
+
+
+	.recipe-row-three {
+		display: column;
+		flex-direction: column;
+		padding: 20px;
+		padding-top: 100px;
+	}
+
+	.recipe-row-three #art-7,
+	#art-8,
+	#art-9 {
+		margin-bottom: 100px;
+	}
+
+
+
+
+	/*--------STYLING THE FOOTER'S PARENT-------*/
+	footer {
+		font-size: 12px;
+		font-family: Arial;
+		padding-top: 50px;
+		padding-bottom: 30px;
+
+	}
+
+
+
+	/*............STYLING THE PRIVACY POLICY LINK.......*/
+	footer a {
+		margin: 20px;
+	}
+
+
+	/*-------STYLING THE IMAGES IN THE FOOTER--------*/
+	footer img {
+		float: right;
+
+	}
+
 }
-
-.recipe-row-three #art-7, #art-8, #art-9 {
-	margin-bottom: 100px;
-}
-
-
-
-
-/*--------STYLING THE FOOTER'S PARENT-------*/
-
-footer {
-	font-size: 12px;
-	font-family: Arial;
-	padding-top: 50px;
-	padding-bottom: 30px;
-
-}
-
-
-
-/*............STYLING THE PRIVACY POLICY LINK.......*/
-footer a {
-	margin: 20px;
-}
-
-
-/*-------STYLING THE IMAGES IN THE FOOTER--------*/
-footer img {
-	float: right;
-
-}
-
-}
-
-
