@@ -140,7 +140,9 @@ The lowest score was 68 for accessibility on the Contact Us page (desktop). The 
 
 
 #### What informed my design choices?
-The idea was to utilize trending UI themes e.g. animation for the navbars and negative space on the About Us page. Furthermore, the entire site used limited text and bright colours with good visual appeal. The bright colours would make the site not only attractive for casual viewers, but also useable for those with disabilities e.g. short-sighted individuals, thus conforming to W3C’s accessibility standards.
+A desktop first approach was taken when developing this website. This was not initially planned; however, more time was spent refining the consistency and integrity of the desktop version than the mobile one. E.g. once the desktop template was completed it was then modified to fit mobile screens using block level elements instead of inline ones, which is what had been used for the desktop version. In hindsight, this was probably a mistake since the industry places a much stronger focus on the mobile first approach these days, so it adheres to trending UX/UI standards. 
+
+When it came to design the layout of Vegan Detox the plan was to utilize trending UI themes e.g. animation for the navbars and negative space on the About Us page. Furthermore, the entire site used limited text and bright colours with good visual appeal. The bright colours would make the site not only attractive for casual viewers, but also useable for those with disabilities e.g. short-sighted individuals, thus conforming to W3C’s accessibility standards.
 
 Being a fan of UX/UI and having seen animation effects used on other websites over the years I felt compelled to use it on this project somehow. That said, it took some time to comprehend how to create these effects in CSS. MDN (Mozilla Developer Network) was used to understand how to scale and configure the keyframes correctly.
 
