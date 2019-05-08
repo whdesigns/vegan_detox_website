@@ -40,17 +40,6 @@ header {
 
 /*---------- MOBILE MENU------------ */
 
-.menu-toggle {
-	position: fixed;
-	top: 2.5rem;
-	right: 2.5rem;
-	color: #eeeeee;
-	font-size: 3rem;
-	cursor: pointer;
-	z-index: 1000;
-	display: none;
-}
-
 
 
 /*---------- NAVBAR------------ */
